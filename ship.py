@@ -41,4 +41,8 @@ class Ship():
 
     def blitme(self):
         """Draw the ship at its current location."""
-        self.screen.blit(self.image, self.rect) # blit(overlap) the surface on the canvas at the rect position
+        self.screen.blit(self.image, self.rect) # blit(overlap) the surface on the canvas at the rect position.
+
+    def center_ship(self):
+        """Center the ship on the screen."""
+        self.center = self.screen_rect.centerx
